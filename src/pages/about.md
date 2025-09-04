@@ -4,7 +4,7 @@ title: "About"
 ---
 
 <img 
-    src="../src/assets/images/about-pic.jpeg"
+    src="https://taufer.dev/profile_pic_small.jpeg"
     alt="Gabriel Taufer"
     width="250"
     style="
