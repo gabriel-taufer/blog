@@ -1,0 +1,48 @@
+---
+export interface Props {
+  id?: string;
+  href: string;
+  class?: string;
+  ariaLabel?: string;
+  title?: string;
+  rel?: string;
+  target?: string;
+  disabled?: boolean;
+}
+
+const {
+  id,
+  href,
+  class: className = "",
+  ariaLabel,
+  title,
+  target = "_blank",
+  rel = "noreferrer",
+  disabled = false,
+} = Astro.props;
+---
+
+{
+  disabled ? (
+    <span
+      id={id}
+      class:list={["group inline-block", className]}
+      title={title}
+      aria-disabled={disabled}
+    >
+      <slot />
+    </span>
+  ) : (
+    <a
+      id={id}
+      {href}
+      class:list={["group inline-block hover:text-accent", className]}
+      aria-label={ariaLabel}
+      title={title}
+      target={target}
+      rel={rel}
+    >
+      <slot />
+    </a>
+  )
+}
