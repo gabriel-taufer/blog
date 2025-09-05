@@ -11,14 +11,14 @@ tags:
   - growth
   - leadership
   - personal
-description: "A mistake during a live demo left me spiraling-until I realized failure isn't the end. It's just input."
+description: "A mistake during a live demo left me spiraling - until I realized it wasn't the end of the world."
 ogImage: "@/assets/images/kintsugi-failure-banner.jpg"
 ---
 
 ![The Failure > Reflection > Growth Loop](@/assets/images/kintsugi-failure-banner.jpg)
 
 <figcaption class="text-center text-sm italic mt-2">
-  Failure is an opportunity to make things better.
+  Failure is an opportunity to make things better
 </figcaption>
 
 

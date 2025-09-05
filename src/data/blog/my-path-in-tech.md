@@ -15,7 +15,7 @@ description: "How I stumbled into technology, the paths I followed, and why I de
 
 ![Old project picture](@/assets/images/doom-pic.png)
 <figcaption class="text-center">
-  A very old image of an animation of the <a href="https://github.com/filipedeschamps/doom-fire-algorithm" target="_blank" rel="noreferrer">Doom fire</a> I made back then.
+  A very old image of an animation of the <a href="https://github.com/filipedeschamps/doom-fire-algorithm" target="_blank" rel="noreferrer">Doom fire</a> I made back then
 </figcaption>
 
 
