@@ -1,5 +1,5 @@
 ---
-title: "I Didn't Mean to Become a Developer. Then This Happened"
+title: "I Didn't Know I Was Becoming a Developer - Until It Was Too Late"
 slug: "my-path-in-tech"
 author: "Gabriel Taufer"
 pubDatetime: 2025-09-03T17:55:00Z
@@ -19,7 +19,9 @@ description: "How I stumbled into technology, the paths I followed, and why I de
 </figcaption>
 
 
-My path in technology started by accident when I enrolled in a course at a local computer school in the town where I grew up - and live to this day.
+My path into technology wasn't part of a big plan - it started by accident.
+
+I had signed up for a course at a local computer school in the town where I grew up - and where I still live today. 
 
 The spark came after a presentation at my high school, where the speaker casually mentioned that people could "get rich" by creating vacuum robots that cleaned houses on their own. For some reason, that stuck with me. I couldn't stop thinking about how to build something like that.
 
@@ -31,8 +33,14 @@ Before long, I found myself with the chance to work at a real tech company, buil
 
 Since then, I've kept growing - working across different parts of the stack and exploring new challenges. I've built backend services, frontend interfaces, mobile apps, and data pipelines. I even dipped into data engineering, constructing ETL workflows. Eventually, this journey led me into a leadership role, guiding a development team at a startup - an experience that has taught me as much about people as it has about code.
 
-Naturally, these experiences have shaped the way I think about software and programming as a whole. It's not just about writing code - it's about solving real problems, communicating clearly, making thoughtful tradeoffs, and building things that last. Alignment beats assumption, every time.
+Naturally, these experiences have shaped the way I think about software and programming as a whole. 
 
-Until now, I've mostly kept that journey to myself, but something tells me it's time to start sharing - not because I have all the answers, but because learning is a constant process and stories like these might help someone else find their path.
+It's not just about writing code - it's about solving real problems, communicating clearly, making thoughtful tradeoffs, and building things that last. Alignment beats assumption, every time.
 
-*"Maybe it will be useful to someone out there."*
+Until now, I've mostly kept that journey to myself, but something tells me it's time to start sharing.
+
+Not because I have all the answers - spoiler alert, I don't.
+
+But because learning is a constant process and stories like these might help someone else find their path.
+
+>Maybe it will be useful to someone out there.
