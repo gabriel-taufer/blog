@@ -2,7 +2,7 @@
 title: "I Didn't Mean to Become a Developer. Then This Happened"
 slug: "my-path-in-tech"
 author: "Gabriel Taufer"
-pubDatetime: 2025-09-04T17:55:00Z
+pubDatetime: 2025-09-03T17:55:00Z
 lang: en
 featured: true
 draft: false
