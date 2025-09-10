@@ -25,7 +25,7 @@ Whether it is about code, people, or the messy, fascinating space between the tw
 The name **"When Things Break"** comes from a simple idea:
 > I've learned the most - about systems, software, teams, and even myself - when something broke.
 
-Bugs, outages, miscommunications, emotional burnouts, failed attemps... Those moments suck - but they're also where real insight happens. This blog is my way of capturing some of those turning points and making sense of them, in public, for the first time.
+Bugs, outages, miscommunications, emotional burnouts, failed attempts... Those moments suck - but they're also where real insight happens. This blog is my way of capturing some of those turning points and making sense of them, in public, for the first time.
 
 If you're looking for my portfolio/resume, head over to taufer.dev
  - that's where I showcase skills and a more professional overview of my career.
