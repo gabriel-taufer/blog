@@ -1,23 +1,26 @@
 @import "tailwindcss";
 @import "./typography.css";
 
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&display=swap');
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;   /* off-white background */
-  --foreground: #282728;   /* deep gray text */
-  --accent: #006cac;       /* strong blue accent */
-  --muted: #e6e6e6;        /* soft gray for muted areas */
-  --border: #ece9e9;       /* subtle border */
+  --background: #FDFCFA;   /* warm off-white */
+  --foreground: #2B2725;   /* warm dark brown */
+  --accent: #C85A3C;       /* muted terracotta/rust */
+  --muted: #E8E3DD;        /* warm muted gray */
+  --border: #EFEAE4;       /* warm subtle border */
 }
 
 html[data-theme="dark"] {
-  --background: #121212;  /* deep charcoal */
-  --foreground: #EAEAEA;  /* soft white */
-  --accent: #3BAFDA;      /* muted cyan blue */
-  --muted: #444444;       /* darker gray for contrast */
-  --border: #2C2C2C;      /* dark separator */
+  --background: #1A1816;  /* warm near-black */
+  --foreground: #E8E3DD;  /* warm off-white */
+  --accent: #E89580;      /* softer salmon/clay */
+  --muted: #3D3935;       /* warm darker gray */
+  --border: #2D2926;      /* warm dark separator */
 }
 
 
@@ -27,6 +30,11 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
+
+  /* Font families */
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Literata", Georgia, serif;
 }
 
 @layer base {
@@ -39,7 +47,8 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background text-foreground selection:bg-accent/75 selection:text-background;
+    font-family: var(--font-body);
   }
   a,
   button {
@@ -61,6 +70,11 @@ html[data-theme="dark"] {
 
 .active-nav {
   @apply underline decoration-wavy decoration-2 underline-offset-4;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-weight: 400;
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */

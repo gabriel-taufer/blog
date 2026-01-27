@@ -1,1 +1,8 @@
 node_modules
+*.DS_Store
+dist
+.env
+.vscode
+.idea
+.claude
+.astro

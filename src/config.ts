@@ -1,13 +1,13 @@
 export const SITE = {
-  website: "https://blog.taufer.dev",
+  website: "https://poorthoughts.com",
   author: "Gabriel Taufer",
-  title: "When Things Break",
-  desc: "Engineering notes and playbooks. Things I think about.",
+  title: "Poor Thoughts",
+  desc: "this is just me thinking, don't take it seriously",
   ogImage: "https://taufer.dev/profile_pic_small.jpeg",
   keywords: ["Gabriel Taufer", "Engineering", "Integrations", "Data", "AWS"],
   lightAndDarkMode: true,
   timezone: "America/Sao_Paulo",
-  profile: "https://satnaing.dev/",
+  profile: "https://taufer.dev/",
   postPerIndex: 4,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes

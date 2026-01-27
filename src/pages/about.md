@@ -22,12 +22,32 @@ My name is Gabriel - and this is where I write.
 
 Whether it is about code, people, or the messy, fascinating space between the two - I try to share thoughts and ideas that were useful to me, hoping they will also be valuable to someone else too.
 
-The name **"When Things Break"** comes from a simple idea:
-> I've learned the most - about systems, software, teams, and even myself - when something broke.
+This wasn't my initial idea for the "branding" of this blog - quoted because I don't think the work I did fully qualifies as branding. But I wanted something more than a name that sounds like "John's Blog." - no offense to the Johns out there.
 
-Bugs, outages, miscommunications, emotional burnouts, failed attempts... Those moments suck - but they're also where real insight happens. This blog is my way of capturing some of those turning points and making sense of them, in public, for the first time.
+I wanted a space where I could be creative without being tied to technical jargon or professional wording. Something that fled the commonly used writing platforms. Despite using an existing framework, I wanted to give it character.
 
-If you're looking for my portfolio/resume, head over to taufer.dev
- - that's where I showcase skills and a more professional overview of my career.
+My character.
 
-If you want to dig into the thoughts behind the work - the context, the stories, the breakage, and the recovery - you're in the right place. 
+The first name was **"When Things Break"** - based on a belief I still hold: **that I've learned the most when something went wrong**. 
+
+It was provoking, open to contemplation. But also, a bit generic.
+
+Eventually it fell out of my liking. I wanted something less serious. More acid. More ironic - like my usual humor.
+
+Then it came to mind: **"Poor Thoughts"**.
+
+Often I catch myself with ideas that are hard to describe. I have to put them to paper in the most chaotic way possible - sometimes inventing words that don't exist or mixing multiple languages - then revise, again and again, until they start making sense to me.
+
+Like carving wood into a sculpture.
+
+That's the essence: raw thoughts, turned into something meaningful through iteration.
+
+Poorly thought. Carefully written.
+
+I've always liked this kind of humor. A bit of self-deprecation. Saying something more serious than it should be. A bit of Dwight Schrute energy - absurdities delivered with a straight face.
+
+So it married perfectly: a style that's out of the ordinary, not for every audience - and my everyday humor, mixing seriousness with irony.
+
+If you're looking for my portfolio or resume, head to [taufer.dev](https://taufer.dev).
+
+If you want to watch someone figure things out in public - you're in the right place.

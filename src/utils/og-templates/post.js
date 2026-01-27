@@ -33,7 +33,7 @@ import loadGoogleFonts from "../loadGoogleFont";
 //       <div
 //         style={{
 //           border: "4px solid #000",
-//           background: "#fefbfb",
+//           background: "#FDFCFA",
 //           borderRadius: "4px",
 //           display: "flex",
 //           justifyContent: "center",
@@ -99,7 +99,7 @@ export default async post => {
       type: "div",
       props: {
         style: {
-          background: "#fefbfb",
+          background: "#FDFCFA",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -114,8 +114,8 @@ export default async post => {
                 position: "absolute",
                 top: "-1px",
                 right: "-1px",
-                border: "4px solid #000",
-                background: "#ecebeb",
+                border: "4px solid #2B2725",
+                background: "#E8E3DD",
                 opacity: "0.9",
                 borderRadius: "4px",
                 display: "flex",
@@ -130,8 +130,8 @@ export default async post => {
             type: "div",
             props: {
               style: {
-                border: "4px solid #000",
-                background: "#fefbfb",
+                border: "4px solid #2B2725",
+                background: "#FDFCFA",
                 borderRadius: "4px",
                 display: "flex",
                 justifyContent: "center",
@@ -156,7 +156,9 @@ export default async post => {
                       props: {
                         style: {
                           fontSize: 72,
-                          fontWeight: "bold",
+                          fontWeight: "600",
+                          fontFamily: "Space Grotesk",
+                          color: "#2B2725",
                           maxHeight: "84%",
                           overflow: "hidden",
                         },
@@ -172,6 +174,8 @@ export default async post => {
                           width: "100%",
                           marginBottom: "8px",
                           fontSize: 28,
+                          fontFamily: "Space Grotesk",
+                          color: "#2B2725",
                         },
                         children: [
                           {
@@ -191,7 +195,7 @@ export default async post => {
                                   props: {
                                     style: {
                                       overflow: "hidden",
-                                      fontWeight: "bold",
+                                      fontWeight: "600",
                                     },
                                     children: post.data.author,
                                   },
@@ -202,7 +206,7 @@ export default async post => {
                           {
                             type: "span",
                             props: {
-                              style: { overflow: "hidden", fontWeight: "bold" },
+                              style: { overflow: "hidden", fontWeight: "normal", fontFamily: "DM Serif Display" },
                               children: SITE.title,
                             },
                           },

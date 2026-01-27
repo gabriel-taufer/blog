@@ -11,6 +11,8 @@
     h4,
     th {
       @apply mb-3 text-foreground;
+      font-family: var(--font-sans);
+      font-weight: 600;
     }
 
     h3 {

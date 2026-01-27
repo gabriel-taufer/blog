@@ -31,6 +31,7 @@ const { tag, tagName, size = "sm" } = Astro.props;
         { "-me-5 size-6": size === "lg" },
       ]}
     />
-    &nbsp;<span>{tagName}</span>
+    // Adding some extra spaces otherwise the font and the icon get convoluted
+    &nbsp;&nbsp;&nbsp;<span>{tagName}</span>
   </a>
 </li>
