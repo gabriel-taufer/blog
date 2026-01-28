@@ -8,19 +8,19 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #FDFCFA;   /* warm off-white */
-  --foreground: #2B2725;   /* warm dark brown */
-  --accent: #C85A3C;       /* muted terracotta/rust */
-  --muted: #E8E3DD;        /* warm muted gray */
-  --border: #EFEAE4;       /* warm subtle border */
+  --background: #e8e4dd;   /* cream */
+  --foreground: #1a1a1a;   /* dark */
+  --accent: #C85A3C;       /* muted terracotta (kept for pop of color) */
+  --muted: #d4d0c9;        /* darker cream */
+  --border: #c8c4bd;       /* cream border */
 }
 
 html[data-theme="dark"] {
-  --background: #1A1816;  /* warm near-black */
-  --foreground: #E8E3DD;  /* warm off-white */
+  --background: #1a1a1a;  /* dark */
+  --foreground: #e8e4dd;  /* cream */
   --accent: #E89580;      /* softer salmon/clay */
-  --muted: #3D3935;       /* warm darker gray */
-  --border: #2D2926;      /* warm dark separator */
+  --muted: #2a2a2a;       /* lighter dark */
+  --border: #333333;      /* dark border */
 }
 
 

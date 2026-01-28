@@ -33,7 +33,7 @@ import loadGoogleFonts from "../loadGoogleFont";
 //       <div
 //         style={{
 //           border: "4px solid #000",
-//           background: "#FDFCFA",
+//           background: "#e8e4dd",
 //           borderRadius: "4px",
 //           display: "flex",
 //           justifyContent: "center",
@@ -99,7 +99,7 @@ export default async post => {
       type: "div",
       props: {
         style: {
-          background: "#FDFCFA",
+          background: "#e8e4dd",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -114,8 +114,8 @@ export default async post => {
                 position: "absolute",
                 top: "-1px",
                 right: "-1px",
-                border: "4px solid #2B2725",
-                background: "#E8E3DD",
+                border: "4px solid #1a1a1a",
+                background: "#d4d0c9",
                 opacity: "0.9",
                 borderRadius: "4px",
                 display: "flex",
@@ -130,8 +130,8 @@ export default async post => {
             type: "div",
             props: {
               style: {
-                border: "4px solid #2B2725",
-                background: "#FDFCFA",
+                border: "4px solid #1a1a1a",
+                background: "#e8e4dd",
                 borderRadius: "4px",
                 display: "flex",
                 justifyContent: "center",
@@ -158,7 +158,7 @@ export default async post => {
                           fontSize: 72,
                           fontWeight: "600",
                           fontFamily: "Space Grotesk",
-                          color: "#2B2725",
+                          color: "#1a1a1a",
                           maxHeight: "84%",
                           overflow: "hidden",
                         },
@@ -175,7 +175,7 @@ export default async post => {
                           marginBottom: "8px",
                           fontSize: 28,
                           fontFamily: "Space Grotesk",
-                          color: "#2B2725",
+                          color: "#1a1a1a",
                         },
                         children: [
                           {

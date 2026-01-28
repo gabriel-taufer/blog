@@ -8,7 +8,7 @@ export default async () => {
       type: "div",
       props: {
         style: {
-          background: "#FDFCFA",
+          background: "#e8e4dd",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -23,8 +23,8 @@ export default async () => {
                 position: "absolute",
                 top: "-1px",
                 right: "-1px",
-                border: "4px solid #2B2725",
-                background: "#E8E3DD",
+                border: "4px solid #1a1a1a",
+                background: "#d4d0c9",
                 opacity: "0.9",
                 borderRadius: "4px",
                 display: "flex",
@@ -39,8 +39,8 @@ export default async () => {
             type: "div",
             props: {
               style: {
-                border: "4px solid #2B2725",
-                background: "#FDFCFA",
+                border: "4px solid #1a1a1a",
+                background: "#e8e4dd",
                 borderRadius: "4px",
                 display: "flex",
                 justifyContent: "center",
@@ -84,7 +84,7 @@ export default async () => {
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 28, fontFamily: "Space Grotesk", color: "#2B2725" },
+                              style: { fontSize: 28, fontFamily: "Space Grotesk", color: "#1a1a1a" },
                               children: SITE.desc,
                             },
                           },
@@ -104,7 +104,7 @@ export default async () => {
                         children: {
                           type: "span",
                           props: {
-                            style: { overflow: "hidden", fontWeight: "600", fontFamily: "Space Grotesk", color: "#2B2725" },
+                            style: { overflow: "hidden", fontWeight: "600", fontFamily: "Space Grotesk", color: "#1a1a1a" },
                             children: new URL(SITE.website).hostname,
                           },
                         },

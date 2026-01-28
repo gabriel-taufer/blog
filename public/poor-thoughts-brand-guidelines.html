@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poor Thoughts - Brand Guidelines</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon-new.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-cream: #e8e4dd;
+            --color-dark: #1a1a1a;
+            --color-gray: #2a2a2a;
+            --color-muted: #666;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--color-dark);
+            color: var(--color-cream);
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            padding: 80px 40px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        .header h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        .header p {
+            color: var(--color-muted);
+            font-size: 18px;
+        }
+        .header .version {
+            margin-top: 24px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-muted);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+            border-bottom: 1px solid #333;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--color-muted);
+            margin-bottom: 40px;
+        }
+        .section-heading {
+            font-family: 'DM Serif Display', serif;
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        .section-description {
+            color: var(--color-muted);
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+        
+        /* Logo Display */
+        .logo-showcase {
+            background: var(--color-gray);
+            border-radius: 16px;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .logo-showcase.light {
+            background: var(--color-cream);
+        }
+        
+        /* Stacked logo styles */
+        .logo-stacked {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1;
+        }
+        .logo-row {
+            display: flex;
+            align-items: center;
+        }
+        .logo-horizontal {
+            display: flex;
+            align-items: center;
+        }
+        .logo-text {
+            font-family: 'DM Serif Display', serif;
+            color: var(--color-cream);
+        }
+        .logo-text.dark {
+            color: var(--color-dark);
+        }
+        
+        /* Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 900px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--color-gray);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .card.light {
+            background: var(--color-cream);
+        }
+        .card-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-muted);
+            margin-bottom: 16px;
+        }
+        .card.light .card-label {
+            color: #666;
+        }
+        .card-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+        }
+        
+        /* Download button */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: 1px solid #444;
+            color: var(--color-cream);
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            margin-top: 16px;
+        }
+        .download-btn:hover {
+            background: #333;
+            border-color: #555;
+        }
+        .card.light .download-btn {
+            border-color: #ccc;
+            color: var(--color-dark);
+        }
+        .card.light .download-btn:hover {
+            background: #ddd;
+        }
+        
+        /* Color swatches */
+        .color-swatch {
+            display: flex;
+            align-items: stretch;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--color-gray);
+        }
+        .swatch-color {
+            width: 120px;
+            min-height: 120px;
+        }
+        .swatch-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .swatch-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .swatch-values {
+            font-size: 13px;
+            color: var(--color-muted);
+            font-family: monospace;
+        }
+        
+        /* Typography */
+        .type-sample {
+            font-family: 'DM Serif Display', serif;
+        }
+        .type-large {
+            font-size: 64px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .type-medium {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .type-info {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: var(--color-muted);
+        }
+        
+        /* Specs table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .specs-table td {
+            padding: 16px 0;
+            border-bottom: 1px solid #333;
+        }
+        .specs-table td:first-child {
+            color: var(--color-muted);
+            width: 200px;
+        }
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Do's and Don'ts */
+        .dos-donts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 700px) {
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+        }
+        .do-card, .dont-card {
+            background: var(--color-gray);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .do-card {
+            border-top: 3px solid #4ade80;
+        }
+        .dont-card {
+            border-top: 3px solid #f87171;
+        }
+        .do-dont-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .do-card .do-dont-label {
+            color: #4ade80;
+        }
+        .dont-card .do-dont-label {
+            color: #f87171;
+        }
+        .do-dont-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            margin-bottom: 12px;
+        }
+        .do-dont-text {
+            font-size: 14px;
+            color: var(--color-muted);
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 60px 40px;
+            text-align: center;
+            color: var(--color-muted);
+            font-size: 14px;
+        }
+        
+        /* Icon sizes display */
+        .icon-sizes {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 32px;
+        }
+        .icon-size-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .icon-size-label {
+            font-size: 12px;
+            color: var(--color-muted);
+        }
+        
+        /* Download all section */
+        .download-all {
+            background: var(--color-gray);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+        }
+        .download-all h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        .download-all p {
+            color: var(--color-muted);
+            margin-bottom: 24px;
+        }
+        .download-all-btns {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .download-all-btns .download-btn {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Poor Thoughts</h1>
+        <p>Brand Guidelines</p>
+        <div class="version">Version 1.0 - January 2026</div>
+    </header>
+
+    <!-- Primary Logo -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">01 - Primary Logo</div>
+            <h2 class="section-heading">The Logo</h2>
+            <p class="section-description">
+                The Poor Thoughts logo combines the wordmark with a neutral face icon. 
+                The stacked layout with the face integrated into the first line creates a unified, memorable mark.
+            </p>
+            
+            <div class="grid-2">
+                <div>
+                    <div class="logo-showcase">
+                        <div class="logo-stacked" style="gap: 4px;">
+                            <div class="logo-row" style="gap: 10px;">
+                                <span class="logo-text" style="font-size: 48px;">Poor</span>
+                                <svg width="46" height="46" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text" style="font-size: 48px;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="card-label">Primary - Dark Background</div>
+                    <button class="download-btn" onclick="downloadSVG('logo-dark', 'poor-thoughts-logo-dark.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+                
+                <div>
+                    <div class="logo-showcase light">
+                        <div class="logo-stacked" style="gap: 4px;">
+                            <div class="logo-row" style="gap: 10px;">
+                                <span class="logo-text dark" style="font-size: 48px;">Poor</span>
+                                <svg width="46" height="46" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text dark" style="font-size: 48px;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="card-label">Primary - Light Background</div>
+                    <button class="download-btn" onclick="downloadSVG('logo-light', 'poor-thoughts-logo-light.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Logo -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">02 - Horizontal Logo</div>
+            <h2 class="section-heading">Single Line Version</h2>
+            <p class="section-description">
+                Use this version when vertical space is limited. The face sits to the right of the full wordmark on a single line.
+            </p>
+            
+            <div class="grid-2">
+                <div>
+                    <div class="logo-showcase">
+                        <div class="logo-horizontal">
+                            <span class="logo-text" style="font-size: 36px;">Poor Thoughts</span>
+                            <svg width="36" height="36" viewBox="0 0 60 60" fill="none" style="margin-left: 12px;">
+                                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-label">Horizontal - Dark Background</div>
+                    <button class="download-btn" onclick="downloadSVG('logo-horizontal-dark', 'poor-thoughts-logo-horizontal-dark.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+                
+                <div>
+                    <div class="logo-showcase light">
+                        <div class="logo-horizontal">
+                            <span class="logo-text dark" style="font-size: 36px;">Poor Thoughts</span>
+                            <svg width="36" height="36" viewBox="0 0 60 60" fill="none" style="margin-left: 12px;">
+                                <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                                <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                                <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-label">Horizontal - Light Background</div>
+                    <button class="download-btn" onclick="downloadSVG('logo-horizontal-light', 'poor-thoughts-logo-horizontal-light.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Compact horizontal -->
+            <div style="margin-top: 40px;">
+                <h3 style="font-size: 18px; margin-bottom: 16px;">Compact Horizontal</h3>
+                <p class="section-description" style="margin-bottom: 24px;">
+                    A smaller version for tight spaces like headers and navigation.
+                </p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-label">Compact - Dark Background</div>
+                        <div class="card-content">
+                            <div class="logo-horizontal">
+                                <span class="logo-text" style="font-size: 24px;">Poor Thoughts</span>
+                                <svg width="24" height="24" viewBox="0 0 60 60" fill="none" style="margin-left: 10px;">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('logo-horizontal-compact-dark', 'poor-thoughts-logo-horizontal-compact-dark.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                    
+                    <div class="card light">
+                        <div class="card-label">Compact - Light Background</div>
+                        <div class="card-content">
+                            <div class="logo-horizontal">
+                                <span class="logo-text dark" style="font-size: 24px;">Poor Thoughts</span>
+                                <svg width="24" height="24" viewBox="0 0 60 60" fill="none" style="margin-left: 10px;">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('logo-horizontal-compact-light', 'poor-thoughts-logo-horizontal-compact-light.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wordmark Only -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">03 - Wordmark</div>
+            <h2 class="section-heading">Text Only</h2>
+            <p class="section-description">
+                The wordmark without the face icon. Use when the icon would be too small to read clearly, or when a cleaner text-only treatment is preferred.
+            </p>
+            
+            <div class="grid-2">
+                <div>
+                    <div class="logo-showcase">
+                        <span class="logo-text" style="font-size: 42px;">Poor Thoughts</span>
+                    </div>
+                    <div class="card-label">Wordmark - Dark Background</div>
+                    <button class="download-btn" onclick="downloadSVG('wordmark-dark', 'poor-thoughts-wordmark-dark.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+                
+                <div>
+                    <div class="logo-showcase light">
+                        <span class="logo-text dark" style="font-size: 42px;">Poor Thoughts</span>
+                    </div>
+                    <div class="card-label">Wordmark - Light Background</div>
+                    <button class="download-btn" onclick="downloadSVG('wordmark-light', 'poor-thoughts-wordmark-light.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Stacked wordmark -->
+            <div style="margin-top: 40px;">
+                <h3 style="font-size: 18px; margin-bottom: 16px;">Stacked Wordmark</h3>
+                <p class="section-description" style="margin-bottom: 24px;">
+                    Text-only version in the stacked layout, matching the primary logo structure.
+                </p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-label">Stacked - Dark Background</div>
+                        <div class="card-content">
+                            <div class="logo-stacked" style="gap: 4px;">
+                                <span class="logo-text" style="font-size: 36px;">Poor</span>
+                                <span class="logo-text" style="font-size: 36px;">Thoughts</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('wordmark-stacked-dark', 'poor-thoughts-wordmark-stacked-dark.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                    
+                    <div class="card light">
+                        <div class="card-label">Stacked - Light Background</div>
+                        <div class="card-content">
+                            <div class="logo-stacked" style="gap: 4px;">
+                                <span class="logo-text dark" style="font-size: 36px;">Poor</span>
+                                <span class="logo-text dark" style="font-size: 36px;">Thoughts</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('wordmark-stacked-light', 'poor-thoughts-wordmark-stacked-light.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icon Mark -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">04 - Icon Mark</div>
+            <h2 class="section-heading">The Face</h2>
+            <p class="section-description">
+                The face icon can be used independently as a favicon, avatar, or app icon. 
+                The neutral expression reflects the brand's self-aware, deadpan humor.
+            </p>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-label">Icon - Dark Background</div>
+                    <div class="card-content">
+                        <div class="icon-sizes">
+                            <div class="icon-size-item">
+                                <svg width="64" height="64" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label">64px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="48" height="48" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label">48px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="32" height="32" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="5" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="5" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label">32px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="16" height="16" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="6" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="6" fill="#1a1a1a"/>
+                                    <line x1="20" y1="40" x2="40" y2="40" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label">16px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadSVG('icon-dark', 'poor-thoughts-icon-dark.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+                
+                <div class="card light">
+                    <div class="card-label">Icon - Light Background</div>
+                    <div class="card-content">
+                        <div class="icon-sizes">
+                            <div class="icon-size-item">
+                                <svg width="64" height="64" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label" style="color: #666;">64px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="48" height="48" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label" style="color: #666;">48px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="32" height="32" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="5" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="5" fill="#e8e4dd"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="4" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label" style="color: #666;">32px</span>
+                            </div>
+                            <div class="icon-size-item">
+                                <svg width="16" height="16" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                                    <circle cx="22" cy="27" r="6" fill="#e8e4dd"/>
+                                    <circle cx="38" cy="27" r="6" fill="#e8e4dd"/>
+                                    <line x1="20" y1="40" x2="40" y2="40" stroke="#e8e4dd" stroke-width="5" stroke-linecap="round"/>
+                                </svg>
+                                <span class="icon-size-label" style="color: #666;">16px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="download-btn" onclick="downloadSVG('icon-light', 'poor-thoughts-icon-light.svg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Favicon specific -->
+            <div style="margin-top: 40px;">
+                <h3 style="font-size: 18px; margin-bottom: 16px;">Favicon Optimized</h3>
+                <p class="section-description" style="margin-bottom: 24px;">
+                    At small sizes, the icon uses thicker strokes and larger features for better legibility.
+                </p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-label">Favicon 32x32</div>
+                        <div class="card-content">
+                            <svg width="32" height="32" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                <circle cx="22" cy="27" r="5" fill="#1a1a1a"/>
+                                <circle cx="38" cy="27" r="5" fill="#1a1a1a"/>
+                                <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('favicon-32', 'poor-thoughts-favicon-32.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                    <div class="card">
+                        <div class="card-label">Favicon 16x16</div>
+                        <div class="card-content">
+                            <svg width="16" height="16" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                <circle cx="22" cy="27" r="6" fill="#1a1a1a"/>
+                                <circle cx="38" cy="27" r="6" fill="#1a1a1a"/>
+                                <line x1="20" y1="40" x2="40" y2="40" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <button class="download-btn" onclick="downloadSVG('favicon-16', 'poor-thoughts-favicon-16.svg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download SVG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colors -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">05 - Color Palette</div>
+            <h2 class="section-heading">Colors</h2>
+            <p class="section-description">
+                The brand uses a warm, high-contrast palette. Cream on dark for primary usage, 
+                inverted for light backgrounds.
+            </p>
+            
+            <div class="grid-2">
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background: #e8e4dd;"></div>
+                    <div class="swatch-info">
+                        <div class="swatch-name">Cream</div>
+                        <div class="swatch-values">
+                            HEX: #e8e4dd<br>
+                            RGB: 232, 228, 221
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background: #1a1a1a;"></div>
+                    <div class="swatch-info">
+                        <div class="swatch-name">Dark</div>
+                        <div class="swatch-values">
+                            HEX: #1a1a1a<br>
+                            RGB: 26, 26, 26
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h3 style="font-size: 18px; margin-bottom: 16px;">Alternative Palettes</h3>
+                <div class="grid-2">
+                    <div class="color-swatch">
+                        <div class="swatch-color" style="background: #ffffff;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Pure White</div>
+                            <div class="swatch-values">
+                                HEX: #ffffff<br>
+                                For pure white backgrounds
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="color-swatch">
+                        <div class="swatch-color" style="background: #000000;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Pure Black</div>
+                            <div class="swatch-values">
+                                HEX: #000000<br>
+                                For pure black backgrounds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">06 - Typography</div>
+            <h2 class="section-heading">Type System</h2>
+            <p class="section-description">
+                The brand uses DM Serif Display for the logo and headings. 
+                It's elegant but approachable - serious without being stiff.
+            </p>
+            
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="type-sample type-large">Poor Thoughts</div>
+                <div class="type-sample type-medium">Poorly thought, carefully written.</div>
+                <div class="type-info" style="margin-top: 24px;">
+                    <strong>DM Serif Display</strong> - Regular 400<br>
+                    Google Fonts: <code>https://fonts.google.com/specimen/DM+Serif+Display</code>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div style="font-family: 'Inter', sans-serif;">
+                    <div style="font-size: 24px; margin-bottom: 8px;">Body text and UI elements</div>
+                    <div style="font-size: 16px; color: var(--color-muted); margin-bottom: 24px;">
+                        The quick brown fox jumps over the lazy dog. 
+                        Unfinished thoughts on code, people, and the messy space between.
+                    </div>
+                </div>
+                <div class="type-info">
+                    <strong>Inter</strong> - Regular 400, Medium 500, Semibold 600<br>
+                    Google Fonts: <code>https://fonts.google.com/specimen/Inter</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">07 - Specifications</div>
+            <h2 class="section-heading">Logo Specs</h2>
+            <p class="section-description">
+                Technical specifications for consistent logo reproduction.
+            </p>
+            
+            <div class="card">
+                <table class="specs-table">
+                    <tr>
+                        <td>Primary Font</td>
+                        <td>DM Serif Display, Regular</td>
+                    </tr>
+                    <tr>
+                        <td>Text Size (primary)</td>
+                        <td>48px</td>
+                    </tr>
+                    <tr>
+                        <td>Icon Size (primary)</td>
+                        <td>46px</td>
+                    </tr>
+                    <tr>
+                        <td>Gap (text to icon)</td>
+                        <td>10px</td>
+                    </tr>
+                    <tr>
+                        <td>Gap (line height)</td>
+                        <td>4px</td>
+                    </tr>
+                    <tr>
+                        <td>Icon Eye Radius</td>
+                        <td>4px (scales with size)</td>
+                    </tr>
+                    <tr>
+                        <td>Icon Mouth Width</td>
+                        <td>16px stroke, round caps</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Size</td>
+                        <td>120px width</td>
+                    </tr>
+                    <tr>
+                        <td>Clear Space</td>
+                        <td>Equal to icon height on all sides</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">08 - Usage Guidelines</div>
+            <h2 class="section-heading">Do's and Don'ts</h2>
+            <p class="section-description">
+                Guidelines for maintaining brand consistency.
+            </p>
+            
+            <div class="dos-donts">
+                <div class="do-card">
+                    <div class="do-dont-label">✓ Do</div>
+                    <div class="do-dont-content">
+                        <div class="logo-stacked" style="gap: 3px;">
+                            <div class="logo-row" style="gap: 8px;">
+                                <span class="logo-text" style="font-size: 28px;">Poor</span>
+                                <svg width="26" height="26" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text" style="font-size: 28px;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="do-dont-text">Use the logo with adequate clear space</div>
+                </div>
+                
+                <div class="dont-card">
+                    <div class="do-dont-label">✗ Don't</div>
+                    <div class="do-dont-content">
+                        <div class="logo-stacked" style="gap: 3px;">
+                            <div class="logo-row" style="gap: 8px;">
+                                <span style="font-family: Arial, sans-serif; font-size: 28px; color: #e8e4dd;">Poor</span>
+                                <svg width="26" height="26" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span style="font-family: Arial, sans-serif; font-size: 28px; color: #e8e4dd;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="do-dont-text">Don't change the typeface</div>
+                </div>
+                
+                <div class="do-card">
+                    <div class="do-dont-label">✓ Do</div>
+                    <div class="do-dont-content">
+                        <svg width="48" height="48" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                            <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                            <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                            <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="do-dont-text">Use the icon alone when space is limited</div>
+                </div>
+                
+                <div class="dont-card">
+                    <div class="do-dont-label">✗ Don't</div>
+                    <div class="do-dont-content">
+                        <svg width="48" height="48" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" fill="#ff6b6b"/>
+                            <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                            <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                            <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="do-dont-text">Don't change the brand colors</div>
+                </div>
+                
+                <div class="do-card">
+                    <div class="do-dont-label">✓ Do</div>
+                    <div class="do-dont-content">
+                        <div class="logo-stacked" style="gap: 3px;">
+                            <div class="logo-row" style="gap: 8px;">
+                                <span class="logo-text" style="font-size: 28px;">Poor</span>
+                                <svg width="26" height="26" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text" style="font-size: 28px;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="do-dont-text">Keep the neutral face expression</div>
+                </div>
+                
+                <div class="dont-card">
+                    <div class="do-dont-label">✗ Don't</div>
+                    <div class="do-dont-content">
+                        <div class="logo-stacked" style="gap: 3px;">
+                            <div class="logo-row" style="gap: 8px;">
+                                <span class="logo-text" style="font-size: 28px;">Poor</span>
+                                <svg width="26" height="26" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                                    <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                                    <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                                    <path d="M22 36 Q30 42 38 36" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text" style="font-size: 28px;">Thoughts</span>
+                        </div>
+                    </div>
+                    <div class="do-dont-text">Don't change the face expression</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download All -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">09 - Downloads</div>
+            <h2 class="section-heading">Asset Downloads</h2>
+            <p class="section-description">
+                Download all brand assets in SVG format.
+            </p>
+            
+            <div class="download-all">
+                <h3>All Assets</h3>
+                <p>Download individual SVG files for each asset</p>
+                <div class="download-all-btns">
+                    <button class="download-btn" onclick="downloadSVG('logo-dark', 'poor-thoughts-logo-dark.svg')">
+                        Logo Stacked (Dark)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('logo-light', 'poor-thoughts-logo-light.svg')">
+                        Logo Stacked (Light)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('logo-horizontal-dark', 'poor-thoughts-logo-horizontal-dark.svg')">
+                        Logo Horizontal (Dark)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('logo-horizontal-light', 'poor-thoughts-logo-horizontal-light.svg')">
+                        Logo Horizontal (Light)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('wordmark-dark', 'poor-thoughts-wordmark-dark.svg')">
+                        Wordmark (Dark)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('wordmark-light', 'poor-thoughts-wordmark-light.svg')">
+                        Wordmark (Light)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('icon-dark', 'poor-thoughts-icon-dark.svg')">
+                        Icon (Dark)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('icon-light', 'poor-thoughts-icon-light.svg')">
+                        Icon (Light)
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('favicon-32', 'poor-thoughts-favicon-32.svg')">
+                        Favicon 32px
+                    </button>
+                    <button class="download-btn" onclick="downloadSVG('favicon-16', 'poor-thoughts-favicon-16.svg')">
+                        Favicon 16px
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Poor Thoughts Brand Guidelines - Version 1.0</p>
+        <p style="margin-top: 8px;">© 2026 Gabriel Taufer. All rights reserved.</p>
+    </footer>
+
+    <!-- SVG Data for Downloads -->
+    <script>
+        const svgData = {
+            'logo-dark': `<svg width="280" height="120" viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="48" font-family="DM Serif Display, serif" font-size="48" fill="#e8e4dd">Poor</text>
+                <circle cx="152" cy="32" r="23" fill="#e8e4dd"/>
+                <circle cx="145" cy="29" r="3.5" fill="#1a1a1a"/>
+                <circle cx="159" cy="29" r="3.5" fill="#1a1a1a"/>
+                <line x1="145" y1="38" x2="159" y2="38" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="0" y="100" font-family="DM Serif Display, serif" font-size="48" fill="#e8e4dd">Thoughts</text>
+            </svg>`,
+            
+            'logo-light': `<svg width="280" height="120" viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="48" font-family="DM Serif Display, serif" font-size="48" fill="#1a1a1a">Poor</text>
+                <circle cx="152" cy="32" r="23" fill="#1a1a1a"/>
+                <circle cx="145" cy="29" r="3.5" fill="#e8e4dd"/>
+                <circle cx="159" cy="29" r="3.5" fill="#e8e4dd"/>
+                <line x1="145" y1="38" x2="159" y2="38" stroke="#e8e4dd" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="0" y="100" font-family="DM Serif Display, serif" font-size="48" fill="#1a1a1a">Thoughts</text>
+            </svg>`,
+            
+            'logo-horizontal-dark': `<svg width="320" height="50" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="36" font-family="DM Serif Display, serif" font-size="36" fill="#e8e4dd">Poor Thoughts</text>
+                <circle cx="288" cy="25" r="18" fill="#e8e4dd"/>
+                <circle cx="282" cy="22" r="3" fill="#1a1a1a"/>
+                <circle cx="294" cy="22" r="3" fill="#1a1a1a"/>
+                <line x1="282" y1="30" x2="294" y2="30" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>`,
+            
+            'logo-horizontal-light': `<svg width="320" height="50" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="36" font-family="DM Serif Display, serif" font-size="36" fill="#1a1a1a">Poor Thoughts</text>
+                <circle cx="288" cy="25" r="18" fill="#1a1a1a"/>
+                <circle cx="282" cy="22" r="3" fill="#e8e4dd"/>
+                <circle cx="294" cy="22" r="3" fill="#e8e4dd"/>
+                <line x1="282" y1="30" x2="294" y2="30" stroke="#e8e4dd" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>`,
+            
+            'logo-horizontal-compact-dark': `<svg width="220" height="36" viewBox="0 0 220 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="26" font-family="DM Serif Display, serif" font-size="24" fill="#e8e4dd">Poor Thoughts</text>
+                <circle cx="200" cy="18" r="12" fill="#e8e4dd"/>
+                <circle cx="195" cy="16" r="2" fill="#1a1a1a"/>
+                <circle cx="205" cy="16" r="2" fill="#1a1a1a"/>
+                <line x1="195" y1="22" x2="205" y2="22" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+            </svg>`,
+            
+            'logo-horizontal-compact-light': `<svg width="220" height="36" viewBox="0 0 220 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="26" font-family="DM Serif Display, serif" font-size="24" fill="#1a1a1a">Poor Thoughts</text>
+                <circle cx="200" cy="18" r="12" fill="#1a1a1a"/>
+                <circle cx="195" cy="16" r="2" fill="#e8e4dd"/>
+                <circle cx="205" cy="16" r="2" fill="#e8e4dd"/>
+                <line x1="195" y1="22" x2="205" y2="22" stroke="#e8e4dd" stroke-width="2" stroke-linecap="round"/>
+            </svg>`,
+            
+            'wordmark-dark': `<svg width="260" height="50" viewBox="0 0 260 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="38" font-family="DM Serif Display, serif" font-size="42" fill="#e8e4dd">Poor Thoughts</text>
+            </svg>`,
+            
+            'wordmark-light': `<svg width="260" height="50" viewBox="0 0 260 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="38" font-family="DM Serif Display, serif" font-size="42" fill="#1a1a1a">Poor Thoughts</text>
+            </svg>`,
+            
+            'wordmark-stacked-dark': `<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="36" font-family="DM Serif Display, serif" font-size="36" fill="#e8e4dd">Poor</text>
+                <text x="0" y="78" font-family="DM Serif Display, serif" font-size="36" fill="#e8e4dd">Thoughts</text>
+            </svg>`,
+            
+            'wordmark-stacked-light': `<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display');</style>
+                <text x="0" y="36" font-family="DM Serif Display, serif" font-size="36" fill="#1a1a1a">Poor</text>
+                <text x="0" y="78" font-family="DM Serif Display, serif" font-size="36" fill="#1a1a1a">Thoughts</text>
+            </svg>`,
+            
+            'icon-dark': `<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                <circle cx="22" cy="27" r="4" fill="#1a1a1a"/>
+                <circle cx="38" cy="27" r="4" fill="#1a1a1a"/>
+                <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+            </svg>`,
+            
+            'icon-light': `<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="28" fill="#1a1a1a"/>
+                <circle cx="22" cy="27" r="4" fill="#e8e4dd"/>
+                <circle cx="38" cy="27" r="4" fill="#e8e4dd"/>
+                <line x1="22" y1="38" x2="38" y2="38" stroke="#e8e4dd" stroke-width="3" stroke-linecap="round"/>
+            </svg>`,
+            
+            'favicon-32': `<svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                <circle cx="22" cy="27" r="5" fill="#1a1a1a"/>
+                <circle cx="38" cy="27" r="5" fill="#1a1a1a"/>
+                <line x1="22" y1="38" x2="38" y2="38" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+            </svg>`,
+            
+            'favicon-16': `<svg width="16" height="16" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="28" fill="#e8e4dd"/>
+                <circle cx="22" cy="27" r="6" fill="#1a1a1a"/>
+                <circle cx="38" cy="27" r="6" fill="#1a1a1a"/>
+                <line x1="20" y1="40" x2="40" y2="40" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+            </svg>`
+        };
+
+        function downloadSVG(id, filename) {
+            const svgContent = svgData[id];
+            const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+
+</body>
+</html>
