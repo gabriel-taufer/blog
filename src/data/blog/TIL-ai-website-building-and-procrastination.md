@@ -22,7 +22,7 @@ description: "How I figured out you can build a website astronomically faster us
 </figcaption>
 
 
-For some time I procrastinated creating a portfolio and some sort of writing space. In 2023/2024, I finally built a first version - hosted on [taufer.dev](https://taufer.dev), using create-react-app with some manually written components and whatever I could grab from random libraries.
+For some time I procrastinated creating a portfolio and some sort of writing space. In 2023/2024, I finally built a first version - hosted on <a href="https://taufer.dev" target="_blank">taufer.dev</a>, using create-react-app with some manually written components and whatever I could grab from random libraries.
 
 It was full of flaws, and things didn't connect well. That's what you get from someone who always preferred backend over frontend and hadn't touched much frontend code in a while. But I hosted it anyway and linked it to my social media, just to have something there.
 
@@ -32,7 +32,7 @@ I'm in the middle of the usual AI news cycle - new launches, people going crazy 
 
 > What if I use AI to get over the boring job of porting my site to a new framework?
 
-I wanted to use Astro. I'd played with it before and liked it for practicality and SEO. So I set sail with Claude Code.
+I wanted to use <a href="https://astro.build/" target="_blank">Astro</a>. I'd played with it before and liked it for practicality and SEO. So I set sail with Claude Code.
 I started without much direction. Some veeeery loose prompts, closer to "here is the old structure, recreate this in Astro and keep the content intact" than anything fancy. No prompt engineering at all - I could probably have saved some water at a data center somewhere.
 
 About an hour later, I had a new version published:
@@ -52,4 +52,4 @@ The first time I built this site, it took me a couple of days, so the contrast w
 
 The interesting part is not that AI can write code. It is that it changes where your attention goes.
 
-When the *"boring"* parts are reduced or eliminated, you spend more time deciding, refining, and shipping. And sometimes, that is all a side project needs to finally exist.
+When the *"boring"* parts are reduced or eliminated, you spend more time making decisions, refining, and shipping. And sometimes, that is all a side project needs to finally exist.
